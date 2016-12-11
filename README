@@ -1,0 +1,17 @@
+Scripts for deleting within a <https://github.com/backuppc/backuppc> backup.
+
+Scrounged up from various places on the internet.
+
+- A pair of cripts for deleting a file within a backup.
+- A script for deleting an entire backup.
+
+Authors: Jeffrey J. Kosowsky, Matthias Meyer
+
+# Installation
+
+    # LIB_INSTALL_DIR="/usr/share/backuppc"
+
+    cp deleteFile/jLib.pm  "${LIB_INSTALL_DIR}"/lib/BackupPC/jLib.pm && chown root:root
+    cp -p deleteFile/backuppc_deletefile.pl $HOME/bin
+
+    cp -p deleteBackup/backuppc_deleteback.pl $HOME/bin
